@@ -1,0 +1,23 @@
+[project]
+name = "fall-detection-system"
+version = "0.1.0"
+description = "基于 CNN + BiLSTM + Attention 的跌倒检测系统，行为识别与边缘计算场景"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Xavier Chen", email = "chanxaviersy@gmail.com"},
+]
+readme = "README.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+
+[tool.flake8]
+max-line-length = 120
+exclude = [".git", "__pycache__", "build", "dist", "data", "models", "outputs"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]

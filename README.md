@@ -1,3 +1,11 @@
+<!-- 徽章 -->
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![CI](https://github.com/chanxaviersy/fall-detection-system/actions/workflows/test.yml/badge.svg)](https://github.com/chanxaviersy/fall-detection-system/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/chanxaviersy/fall-detection-system)](https://github.com/chanxaviersy/fall-detection-system)
+
+---
+
 # 人类跌倒行为识别系统
 
 > 基于计算机视觉与深度学习的实时人体跌倒检测系统
