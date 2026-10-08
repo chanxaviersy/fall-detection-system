@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# 数据 / 模型
+data/raw/
+data/*.parquet
+data/*.csv
+data/*.db
+data/*.npz
+data/*.npy
+data/*.wav
+data/*.mp4
+data/*.avi
+models/*.pt
+models/*.pth
+models/*.pkl
+models/*.h5
+models/*.onnx
+
+# 输出
+outputs/*.csv
+outputs/*.png
+outputs/*.jpg
+outputs/*.gif
+outputs/*.mp4
+reports/*.xlsx
+reports/*.html
+
+# 日志
+*.log
+logs/
+
+# 环境变量
+.env
+.env.local
+
+# 临时文件
+*.tmp
+*.bak
+nohup.out
