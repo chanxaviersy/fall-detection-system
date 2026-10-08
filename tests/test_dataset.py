@@ -22,6 +22,7 @@ def test_skeleton_dataset_item_shape(sample_skeleton_dataset):
     X, y = sample_skeleton_dataset
     ds = SkeletonDataset(X, y)
     x, label = ds[0]
+    # X 在 dataset 中被 reshape 为 (T, J*C)
     assert x.shape == (30, 17 * 2)
     assert label.dim() == 0  # scalar tensor
 

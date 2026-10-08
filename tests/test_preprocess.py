@@ -21,12 +21,13 @@ def test_normalize_skeleton_dtype(sample_skeleton_sequence):
 
 
 def test_preprocess_dataset_shape(sample_skeleton_dataset):
-    """预处理后 shape 应为 (N, T, J*C)"""
+    """预处理后 shape 应保持 (N, T, J, C)，但被平展后 reshape 回来"""
     from preprocess import preprocess_dataset
 
     X, _ = sample_skeleton_dataset
     result = preprocess_dataset(X)
-    assert result.shape == (10, 30, 17 * 2)
+    # 输出在源码中 reshape 回去 (N, T, J*C) → (N, T, J, C)
+    assert result.shape == (10, 30, 17, 2)
     assert result.dtype == np.float32
 
 
